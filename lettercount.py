@@ -11,9 +11,9 @@ lower_text = txt.lower()
 
 counter = [0]*26
 
-for x in lower_text:	
+for i in lower_text:	
 	#get ord value of the letter
-	intValue = ord(x)
+	intValue = ord(i)
 
 	#test if character is a letter from a-z (97-122)
 	if intValue >= 97 and intValue <= 122:
@@ -24,8 +24,8 @@ for x in lower_text:
 
 
 #print count to screen in alphabetical order
-for x in range(len(counter)):
-	print counter[x]
+for i in counter:
+	print i
 
 #pipe contents to 'spark' program
 
